@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorArena"
+        app:theme="@style/ToolbarName">
+
+        <RelativeLayout
+            android:id="@+id/idLLsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--edit text for getting the search
+                query for book from user-->
+            <EditText
+                android:id="@+id/et_searchBooks"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/border_edit_text_search"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:focusedByDefault="true"
+                android:hint="Título, autor o ISBN"
+
+                android:paddingStart="15dp"
+
+                android:textSize="17dp" />
+
+
+            <!--image button for our search button -->
+            <ImageButton
+                android:id="@+id/btn_searchBooks"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+
+                android:backgroundTint="@color/colorGrayLight"
+                android:src="@drawable/ic_search_black"
+
+                app:tint="@color/colorGray" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</com.google.android.material.appbar.AppBarLayout>

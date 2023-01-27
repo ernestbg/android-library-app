@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MyBooksFragment"
+    android:layout_marginBottom="50dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorArena"
+            app:theme="@style/ToolbarName">
+
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                android:id="@+id/searchBar"
+                style="@style/MaterialSearchBarLight"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:mt_backIconTint="@color/colorGray"
+                app:mt_clearIconTint="@color/colorGray"
+
+
+
+                app:mt_hint="Buscar en mis libros"
+                app:mt_leftTextSelectorTint="@color/colorGray"
+                app:mt_maxSuggestionsCount="10"
+                app:mt_menuIconTint="@color/colorGray"
+                app:mt_placeholder="Buscar en mis libros"
+                app:mt_placeholderColor="@color/colorGray"
+                app:mt_roundedSearchBarEnabled="true"
+
+                app:mt_searchBarColor="@color/white"
+
+                app:mt_searchIconTint="@color/colorGray"
+
+                app:mt_textColor="@color/colorGray" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_myBooks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_numberBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No hay libros"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorArena"
+        android:src="@drawable/ic_add"
+        android:tint="@color/black"
+        app:rippleColor="#000000" />
+
+
+</FrameLayout>

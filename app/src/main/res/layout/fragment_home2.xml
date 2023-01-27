@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorArena"
+            app:theme="@style/ToolbarName">
+
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                android:id="@+id/searchBar"
+                style="@style/MaterialSearchBarLight"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:mt_backIconTint="@color/colorGray"
+                app:mt_clearIconTint="@color/colorGray"
+
+                app:mt_hint="Buscar publicaciones"
+                app:mt_leftTextSelectorTint="@color/colorGray"
+                app:mt_maxSuggestionsCount="10"
+                app:mt_menuIconTint="@color/colorGray"
+                app:mt_placeholder="Buscar publicaciones"
+                app:mt_placeholderColor="@color/colorGray"
+                app:mt_roundedSearchBarEnabled="true"
+                app:mt_searchBarColor="@color/white"
+                app:mt_searchIconTint="@color/colorGray"
+
+                app:mt_textColor="@color/colorGray" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_home"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorArena"
+        android:src="@drawable/ic_add"
+        android:tint="@color/black"
+        app:rippleColor="#000000" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

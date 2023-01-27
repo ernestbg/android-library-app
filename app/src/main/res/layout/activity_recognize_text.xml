@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RecognizeTextActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorArena">
+
+        <ImageView
+            android:id="@+id/iv_arrow_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Reconocer texto"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp">
+
+        </TextView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+
+
+                    <EditText
+                        android:id="@+id/et_scanResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:autoLink="all"
+                        android:background="@drawable/radius"
+                        android:gravity="top"
+                        android:hint="Aquí aparecerá el resultado del escaneo..."
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:padding="5dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btn_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorArena"
+                    android:text="Escanear imagen"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"/>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_speak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/colorArena"
+                android:padding="10dp"
+                android:text="LEER TEXTO EN VOZ ALTA"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

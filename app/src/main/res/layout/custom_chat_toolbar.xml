@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorArena">
+
+    <ImageView
+        android:id="@+id/iv_arrowBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_person_black"
+        app:civ_circle_background_color="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/iv_arrowBack"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/civ_profile"
+        android:maxLines="1"
+        android:text="Nombre de usuario"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tv_relativeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_username"
+        android:layout_toRightOf="@+id/civ_profile"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+
+
+
+
+
+</RelativeLayout>

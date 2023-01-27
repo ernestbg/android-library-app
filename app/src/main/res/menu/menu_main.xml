@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/itemWritePost"
+        android:title="Crear publicación"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/itemStatistics"
+        android:title="Estadísticas"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/itemTextRecognition"
+        android:title="Reconocer texto"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/itemConvertToCsv"
+        android:title="Convertir a CSV"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/itemLogout"
+        android:title="Cerrar sesión"
+        app:showAsAction="never"/>
+
+
+</menu>

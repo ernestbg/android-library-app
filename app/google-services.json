@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "449798284902",
+    "project_id": "app-red-social-lectores",
+    "storage_bucket": "app-red-social-lectores.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449798284902:android:4ffbfa459cfb33a226efa7",
+        "android_client_info": {
+          "package_name": "com.example.proyectoappredsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449798284902-43fvk92823hj54hfvg6glamkifptcd2t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyectoappredsocial",
+            "certificate_hash": "80350cc4cc1d5f4004736e0fa93638e509efb2b6"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaZ6-XcZt1x6ZlKiBpYCEBpubjUlANZ6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

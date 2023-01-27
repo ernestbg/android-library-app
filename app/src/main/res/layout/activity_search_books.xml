@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.SearchBooksActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorArena"
+            app:theme="@style/ToolbarName">
+
+            <RelativeLayout
+                android:id="@+id/idLLsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <!--edit text for getting the search
+                    query for book from user-->
+                <EditText
+                    android:id="@+id/et_searchBooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/border_edit_text_search"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:focusedByDefault="true"
+                    android:hint="Título, autor o ISBN"
+
+                    android:paddingStart="15dp"
+
+                    android:textSize="17dp" />
+
+
+
+
+                <!--image button for our search button -->
+                <ImageButton
+                    android:id="@+id/btn_searchBooks"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+
+                    android:backgroundTint="@color/colorGrayLight"
+                    app:tint="@color/colorGray"
+
+                    android:src="@drawable/ic_search_black" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <!--recycler view for displaying our list of books-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/idLLsearch"
+        tools:ignore="NotSibling" />
+
+    <!--progressbar for displaying our loading indicator-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
